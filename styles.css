@@ -690,6 +690,8 @@ footer small{
   display: grid;
   gap: 2rem;
   text-align: center;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .top-content img{
