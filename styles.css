@@ -848,7 +848,9 @@ footer small{
 
 .catering-content{
   text-align: end;
-
+  border-right: 4px solid #414141;
+  border-bottom: 4px solid #414141;
+  padding: 1rem;
 }
 
 .catering-content p.label{
@@ -871,7 +873,7 @@ footer small{
   content: '';
   width: 0;
   height: 1px;
-  background-color: #414141;
+  background-color: #d40412;
   transition: width 400ms ease;
 }
 
@@ -882,4 +884,10 @@ footer small{
 .catering-content .email-arrow{
   transition: transform 400ms ease;
   transform: rotate(45deg);
+}
+
+@media (min-width: 992px){
+  .catering-content{
+    margin-right: 11rem;
+  }
 }
