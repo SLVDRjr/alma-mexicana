@@ -345,7 +345,7 @@ button.mobile-order-online:hover{
 
 .hero-slider{
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .navigation-dots{
@@ -366,14 +366,6 @@ button.mobile-order-online:hover{
 .navigation-dots i.active{
   color:#d40412;
 }
-
-/* .hero-section-overlay{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: #11111190;
-} */
 
 .hero-content{
   padding-inline: 1rem;
