@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,18 +80,25 @@
       <main>
         <article>
           <!-- hero -->
-          <div class="hero-section">
-            <div class="hero-section-overlay"></div>
-            <div class="hero-content">
-              <h1>Authentic Tacos</h1>
-              <p>
-                All tacos are topped with cilantro and onions, served with lime
-                and a side of your favorite taco salsa! - Taco Salsas: Roja,
-                Habanero, Verde and Piña-Jalapeño. Mix and match your favorite
-                tacos:
-              </p>
-              <button class="browse-menus">Browse Menus</button>
+          <div class="hero-slider">
+            <div class="hero-section">
+              <div class="hero-section-overlay"></div>
+              <div
+                class="hero-content slide"
+                data-index="0"
+                data-status="active"
+              >
+                <h1>Authentic Tacos</h1>
+                <p>
+                  All tacos are topped with cilantro and onions, served with
+                  lime and a side of your favorite taco salsa! - Taco Salsas:
+                  Roja, Habanero, Verde and Piña-Jalapeño. Mix and match your
+                  favorite tacos:
+                </p>
+                <button class="browse-menus">Browse Menus</button>
+              </div>
             </div>
+            <div class="navigation-dots"></div>
           </div>
           <!-- home menu -->
           <div class="home-menu-section">

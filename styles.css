@@ -334,7 +334,6 @@ button.mobile-order-online:hover{
 /* main */
 /* hero section */
 .hero-section{
-  background-image: url(images/banner.jpg);
   background-size: cover;
   background-position: center;
   height: 50vh;
@@ -342,6 +341,29 @@ button.mobile-order-online:hover{
   align-items: center;
   position: relative;
   z-index: 10;
+}
+
+.hero-slider{
+  position: relative;
+}
+
+.navigation-dots{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  bottom: 5%;
+  z-index: 99;
+  width: 100%;
+}
+
+.navigation-dots i{
+  cursor: pointer;
+  color: #fff;
+}
+
+.navigation-dots i.active{
+  color:#d40412;
 }
 
 .hero-section-overlay{
