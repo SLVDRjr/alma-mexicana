@@ -96,3 +96,29 @@ const slideIn = [
   { transform: "translateX(0)" }
 ]
 
+// animate when gallery is scrolled
+const itemImgObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.animate(fadeIn, 1000)
+    }
+  })
+})
+
+const itemImgs = document.querySelectorAll('.item-img')
+itemImgs.forEach(itemImg => {
+  itemImgObserver.observe(itemImg)
+})
+
+const itemInfoObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('scrolled')
+    }
+  })
+})
+
+const itemInfos = document.querySelectorAll('.item-info')
+itemInfos.forEach(itemInfo => {
+  itemInfoObserver.observe(itemInfo)
+})

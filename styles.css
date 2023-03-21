@@ -521,11 +521,22 @@ button.browse-menus:hover{
 .gallery-item{
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 
-.item-info{
+.gallery-item .item-info{
   max-width: 540px;
   margin-block: 1rem;
+  transition: transform 600ms ease;
+  transform: translateX(100%);
+}
+
+.gallery-item:nth-child(2) .item-info{
+  transform: translateX(-100%);
+}
+
+.gallery-item .item-info.scrolled{
+  transform: translateX(0);
 }
 
 .item-info p{
