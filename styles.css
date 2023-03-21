@@ -823,24 +823,26 @@ footer small{
 /* menus page */
 .menus-section{
   padding: 5rem 1rem 0 1rem;
+  display: flex;
+  justify-content: end;
 }
 
 .menus-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #414141;
+  text-align: end;
+  border-right: 4px solid #414141;
+  border-bottom: 4px solid #414141;
+  padding: 1rem;
 }
 
-.menus-content p.large{
-  margin-bottom: 1rem;
+.menus-content p.tips{
+  margin-top: 1rem;
 }
 
 .meal-buttons{
   display: flex;
+  flex-direction: column;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 .meal-buttons button{
@@ -854,7 +856,13 @@ footer small{
 
 .meal-buttons button:hover{
   background-color: #d4041290;
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+@media (min-width: 992px){
+  .menus-content{
+    margin-right: 11rem;
+  }
 }
 
 @media (min-width: 768px){
