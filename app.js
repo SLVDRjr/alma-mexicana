@@ -27,7 +27,7 @@ const nav = document.querySelector('nav')
 const scrolledDownNav = () => {
   if(document.documentElement.scrollTop > 100 && window.innerWidth > 992){
     nav.classList.add('scrolled')
-  }else{
+  }else if(document.documentElement.scrollTop === 0){
     nav.classList.remove('scrolled')
   }
 }
