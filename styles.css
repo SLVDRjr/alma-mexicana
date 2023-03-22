@@ -10,8 +10,12 @@ input, button, textarea{
   color: inherit;
 }
 
+input{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 button{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img{
@@ -20,9 +24,22 @@ img{
 }
 
 h1, h2, h3, p.large{
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #d40412;
+}
+
+@media (min-width: 768px){
+  h1, h2, h3, p.large{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px){
+  h1, h2, h3, p.large{
+    font-size: 2.5rem;
+  }
 }
 
 a{
@@ -32,7 +49,7 @@ a{
 
 body{
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: #111111;
   color: #fff;
 }
@@ -143,7 +160,7 @@ button.nav-bars[aria-expanded="true"] span:nth-child(3){
 
 .mobile-nav-links a{
   position: relative;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   transition: color 400ms ease;
 }
@@ -168,7 +185,6 @@ button.nav-bars[aria-expanded="true"] span:nth-child(3){
 }
 
 button.mobile-order-online{
-  font-family: 'Playfair Display', serif;
   font-size: .875rem;
   background-color: transparent;
   border: none;
@@ -193,6 +209,7 @@ button.mobile-order-online:hover{
 .mobile-contact-number{
   display: flex;
   gap: .75rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .mobile-contact-number span{
@@ -230,6 +247,7 @@ button.mobile-order-online:hover{
   }
 
   .nav-contact-info{
+    font-family: 'Montserrat', sans-serif;
     opacity: 1;
     transform: translateY(0);
     transition: all 400ms ease;
@@ -296,7 +314,7 @@ button.mobile-order-online:hover{
   }
 
   .nav-links a{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     position: relative;
     transition: color 400ms ease;
   }
@@ -433,6 +451,10 @@ button.browse-menus:hover{
   .hero-section-overlay{
     display: none;
   }
+
+  .hero-content p{
+    font-size: 1.125rem;
+  }
 }
 
 /* menu section */
@@ -472,8 +494,8 @@ button.browse-menus:hover{
 }
 
 .home-menu p{
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
   margin-top: 1rem;
 }
 
@@ -481,9 +503,23 @@ button.browse-menus:hover{
   color: #d40412;
 }
 
+@media (min-width: 768px){
+  .home-menu p{
+    font-size: 1.25rem;
+  }
+}
+
 @media (min-width: 992px){
+  .home-menu-section p.intro{
+    font-size: 1.125rem;
+  }
+
   .home-menus{
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .home-menu p{
+    font-size: 1.5rem;
   }
 }
 
@@ -510,18 +546,51 @@ button.browse-menus:hover{
   margin-block: 1rem;
 }
 
+.feedback-content img.quote{
+  width: 60px;
+  height: 32.5px;
+}
+
 .feedback-content p.quote{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  filter: opacity(80%);
   max-width: 800px;
 }
 
 .feedback-content p.name{
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  /* font-size: 1.5rem; */
+}
+
+@media (min-width: 768px){
+  .feedback-content img.quote{
+    width: 90px;
+    height: 48.75px;
+  }
+
+  .feedback-content p.name{
+    font-size: 1.25rem;
+  }
 }
 
 @media (min-width: 992px){
   .feedback-section{
     height: 100vh;
+  }
+
+  .feedback-content p.intro, .feedback-content p.quote{
+    font-size: 1.125rem;
+  }
+
+  .feedback-content img.quote{
+    width: unset;
+    height: unset;
+  }
+
+  .feedback-content p.name{
+    font-size: 1.5rem;
   }
 }
 
@@ -579,6 +648,13 @@ button.learn-more:hover{
     order: 2;
   }
 }
+
+@media (min-width: 992px){
+  .item-info p{
+    font-size: 1.125rem;
+  }
+}
+
 
 /* contact-section */
 .home-contact-section{
@@ -651,6 +727,12 @@ button.learn-more:hover{
   }
 }
 
+@media (min-width: 992px){
+  .home-contact-content p.intro{
+    font-size: 1.125rem;
+  }
+}
+
 /* footer */
 footer{
   display: flex;
@@ -677,6 +759,7 @@ footer{
 }
 
 footer small{
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   padding-block: 2rem;
   border-top: 1px solid #414141;
@@ -692,6 +775,8 @@ footer small{
 }
 
 .footer-contact-info p.label{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
   margin-block: 1rem;
 }
 
@@ -716,6 +801,14 @@ footer small{
 
   .footer-logo img{
     width: unset;
+  }
+
+  .footer-content p.intro{
+    font-size: 1.125rem;
+  }
+
+  .footer-contact-info p.label{
+    font-size: 1.25rem;
   }
 }
 
@@ -768,6 +861,12 @@ footer small{
   }
 }
 
+@media (min-width: 992px){
+  .about-section p{
+    font-size: 1.125rem;
+  }
+}
+
 /* contact-form */
 .contact-section{
   padding: 5rem 1rem 0 1rem;
@@ -784,7 +883,7 @@ footer small{
 }
 
 .contact-content .contact-details p.label{
-  font-family: 'Playfair Display', serif;
+  font-family:Georgia, 'Times New Roman', Times, serif;
   color: #d40412;
   margin-block: .5rem;
 }
@@ -835,6 +934,16 @@ footer small{
 
   .contact-content form button#submit{
     grid-column: span 2;
+  }
+}
+
+@media (min-width: 992px){
+  .contact-details p.large{
+    font-size: 2.5rem;
+  }
+
+  .contact-details p{
+    font-size: 1.125rem;
   }
 }
 
