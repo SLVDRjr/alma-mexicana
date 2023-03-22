@@ -21,3 +21,15 @@ window.addEventListener('resize', () => {
   }
 })
 
+// Style nav when scrolled down
+const nav = document.querySelector('nav')
+
+const scrolledDownNav = () => {
+  if(document.documentElement.scrollTop > 100 && window.innerWidth > 992){
+    nav.classList.add('scrolled')
+  }else{
+    nav.classList.remove('scrolled')
+  }
+}
+
+window.addEventListener("scroll", scrolledDownNav)

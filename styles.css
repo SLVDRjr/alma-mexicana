@@ -11,7 +11,6 @@ input, button, textarea{
 }
 
 button{
-  /* font-family: 'Poppins', serif; */
   font-family: 'Playfair Display', serif;
 }
 
@@ -55,7 +54,7 @@ nav{
   z-index: 999;
 }
 
-nav .logo img{
+nav .logo{
   width: 100px;
 }
 
@@ -218,8 +217,27 @@ button.mobile-order-online:hover{
 
 /* nav media queries */
 @media (min-width: 992px){
-  nav .logo img{
-    width: unset;
+  /* shrink logo when scrolled */
+  nav.scrolled #logo{
+    width: 100px;
+  }
+
+  /* hide contact number when scrolled */
+  nav.scrolled .nav-contact-info{
+    opacity: 0;
+    transform: translateY(-100%);
+    pointer-events: none;
+  }
+
+  .nav-contact-info{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 400ms ease;
+  }
+  
+  nav .logo{
+    width: 200px;
+    transition: width 400ms ease;
   }
 
   button.nav-bars{
